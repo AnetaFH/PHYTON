@@ -132,6 +132,8 @@ else:
        
 print(55 * oddelovac)
     
+# TOTO JE HLAVNI CAST PROGRAMU
+
 # TODO: pro vybrany text spocita nasledujici statistiky
 jednotliva_slova = vygeneruj_jednotliva_slova(TEXTS)
 
