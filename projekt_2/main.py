@@ -6,6 +6,7 @@ email: aneta.hlavackova@skanska.cz
 """
 
 import random
+import sys
 
 oddelovac = 58 * "-" 
 
@@ -34,7 +35,10 @@ hledane_cislo = list(nahodne_cislo)
 # FUNKCE:
 # fce upozorneni
 def upozorneni(cislo):
-    if not cislo.isdigit():
+    if cislo == "exit":
+        print("Končím program.")
+        sys.exit()
+    elif not cislo.isdigit():
         print("Input has to be a number!")
     elif int(cislo) > 9999 or int(cislo) < 1000:
         print("Number is inthe range 1000-9999.")
@@ -72,7 +76,7 @@ while bulls != 4:
         if bulls != 4:
             print(f"{bulls} {text_b}, {cows} {text_c}")
         kolo += 1
-
+    
 
     
 print(oddelovac)
